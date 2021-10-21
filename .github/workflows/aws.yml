@@ -30,7 +30,7 @@ jobs:
       id: build-image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: aws-ecs-demo-ecr
+        ECR_REPOSITORY: poc_nodejs_ecs
         IMAGE_TAG: ${{ github.sha }}
       run: |
         # Build a docker container and
