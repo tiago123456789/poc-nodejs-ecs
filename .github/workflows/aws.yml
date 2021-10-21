@@ -54,4 +54,3 @@ jobs:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: poc-nodejs-ecs-version-2
         cluster: poc-nodejs-ecs
-        wait-for-service-stability: true
